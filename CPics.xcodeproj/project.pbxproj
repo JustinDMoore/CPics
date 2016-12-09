@@ -22,6 +22,7 @@
 		AE57B15B1DDE1D2F000CE13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE57B15A1DDE1D2F000CE13D /* Assets.xcassets */; };
 		AE57B15E1DDE1D2F000CE13D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE57B15C1DDE1D2F000CE13D /* LaunchScreen.storyboard */; };
 		AE57B16B1DDE1DB3000CE13D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE57B16A1DDE1DB3000CE13D /* MainViewController.swift */; };
+		AE7D48371DFA0F55004D1808 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7D48361DFA0F55004D1808 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		AE57B15D1DDE1D2F000CE13D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE57B15F1DDE1D2F000CE13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AE57B16A1DDE1DB3000CE13D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AE7D48361DFA0F55004D1808 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AFA05E583AC54F78FBF903DA /* Pods_CPics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -105,6 +107,7 @@
 				9FD9E6AF1DF0A36200C0A9E3 /* RatingsViewController.swift */,
 				AE57B16A1DDE1DB3000CE13D /* MainViewController.swift */,
 				9FC45DAD1DEF6667008A4A75 /* FilterTableViewController.swift */,
+				AE7D48361DFA0F55004D1808 /* LoginViewController.swift */,
 				9FD9E6B31DF0AD7600C0A9E3 /* NoteTableViewCell.swift */,
 				9FD9E6B11DF0A6C600C0A9E3 /* NotesTableViewController.swift */,
 				AE1A89261DDE1F5B009F9138 /* CAParse.swift */,
@@ -258,6 +261,7 @@
 				9FD9E6B01DF0A36200C0A9E3 /* RatingsViewController.swift in Sources */,
 				9FDD0AB31DF081E3006E0865 /* TabProfileViewController.swift in Sources */,
 				AE57B16B1DDE1DB3000CE13D /* MainViewController.swift in Sources */,
+				AE7D48371DFA0F55004D1808 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,7 +392,7 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/CadetsAuditions/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CPics/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yea.CadetAuditions.CPics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +412,7 @@
 					"$(USER_LIBRARY_DIR)/Mobile\\ Documents/com~apple~CloudDocs/Projects/CadetsAuditions/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = CPics/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.yea.CadetAuditions.CPics;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -19,6 +19,7 @@ class NotesTableViewController: UITableViewController {
         super.viewDidLoad()
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 140
+        tableView.tableFooterView = nil
         tableView.tableFooterView = UIView()
         
         if let member = Server.member {
@@ -50,6 +51,7 @@ class NotesTableViewController: UITableViewController {
                 let newNote = PFObject(className: "MemberNotes")
                 newNote["note"] = textField?.text
                 newNote.setObject(self.member!, forKey: "member")
+                newNote.setObject(PFUser.current()!, forKey: "staff")
                 newNote.saveEventually { (done: Bool, err: Error?) in
                     if done {
                         self.arrayOfNotes?.append(newNote)

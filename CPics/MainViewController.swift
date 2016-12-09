@@ -52,13 +52,15 @@ class MainViewController: SlideMenuController, UITableViewDataSource, UITableVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.hidesBackButton = true
+        
         tableView.tableFooterView = UIView()
         
         txtSearch.delegate = self
         txtSearch.addTarget(self, action: #selector(UITextFieldDelegate.textFieldShouldEndEditing(_:)), for: UIControlEvents.editingChanged)
 
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Filter", style: .plain, target: self, action: #selector(MainViewController.filter))
-        txtSearch.frame = CGRect(x: 0, y: 0, width: (self.navigationController?.navigationBar.frame.size.width)! - 50, height: 30)
+//        txtSearch.frame = CGRect(x: 0, y: 0, width: (self.navigationController?.navigationBar.frame.size.width)! - 50, height: 30)
         self.navigationItem.titleView = txtSearch
         
         let imageView = UIImageView(image: UIImage(named: "Search"))
